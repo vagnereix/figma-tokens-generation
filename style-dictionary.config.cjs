@@ -8,6 +8,7 @@ const CSS_PREFIXES_TO_STRIP = [
   'semantic-colors-',
   'semantic-colors-',
 ];
+const CLASS_PREFIXES_TO_STRIP = ['font-single-line', 'font-default'];
 
 function isColorToken(token) {
   const directType = token.type;
@@ -247,6 +248,24 @@ function createGridUtility(token) {
   );
 }
 
+function stripClassNamePrefixes(name) {
+  let result = name;
+
+  CLASS_PREFIXES_TO_STRIP.forEach((prefix) => {
+    const hyphenated = `${prefix}-`;
+
+    if (result === prefix) {
+      result = '';
+    } else if (result.startsWith(hyphenated)) {
+      result = result.slice(hyphenated.length);
+    } else if (result.startsWith(prefix)) {
+      result = result.slice(prefix.length);
+    }
+  });
+
+  return result.replace(/^[-_]+/, '');
+}
+
 function toClassSelector(token) {
   const baseName = token.name || (token.path || []).join('-');
 
@@ -257,7 +276,15 @@ function toClassSelector(token) {
     .replace(/-+/g, '-')
     .toLowerCase();
 
-  return `.${normalized}`;
+  const stripped = stripClassNamePrefixes(normalized);
+  const prefixStripped = stripped !== normalized;
+  let className = stripped.length > 0 ? stripped : normalized;
+
+  if (prefixStripped && className.length > 0) {
+    className = `text-${className}`;
+  }
+
+  return `.${className}`;
 }
 
 StyleDictionary.registerFormat({
@@ -271,7 +298,6 @@ StyleDictionary.registerFormat({
       ' * Do not edit directly',
       ` * Generated on ${new Date().toUTCString()}`,
       ' */',
-      '',
       `${selector} {`,
     ];
 
