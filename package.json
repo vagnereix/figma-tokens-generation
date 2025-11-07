@@ -7,7 +7,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "style-dictionary build"
+    "build": "style-dictionary build --config ./style-dictionary.config.cjs"
   },
   "repository": {
     "type": "git",

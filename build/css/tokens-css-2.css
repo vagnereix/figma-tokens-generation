@@ -1,0 +1,355 @@
+/**
+ * Do not edit directly
+ * Generated on Fri, 07 Nov 2025 01:57:35 GMT
+ */
+
+:root {
+  --gradient-gradient-p-gina-inicial: {
+    "gradientType": "radial",
+    "rotation": 180,
+    "stops": [
+      {
+        "position": 0,
+        "color": "#000000ff"
+      },
+      {
+        "position": 0.69,
+        "color": "#09090980"
+      },
+      {
+        "position": 1,
+        "color": "#09090900"
+      }
+    ]
+  };
+  --gradient-gradient-primary: {
+    "gradientType": "linear",
+    "rotation": 180,
+    "stops": [
+      {
+        "position": 0,
+        "color": "#282828ff"
+      },
+      {
+        "position": 1,
+        "color": "#28282800"
+      }
+    ]
+  };
+  --grid-web-grid-0: {
+    "pattern": "columns",
+    "gutterSize": 16,
+    "alignment": "stretch",
+    "count": 16,
+    "offset": 24
+  };
+  --grid-web-grid-1: {
+    "pattern": "rows",
+    "gutterSize": 16,
+    "alignment": "stretch",
+    "count": 10,
+    "offset": 24
+  };
+  --grid-web-vertical: {
+    "pattern": "columns",
+    "gutterSize": 16,
+    "alignment": "stretch",
+    "count": 16,
+    "offset": 24
+  };
+  --grid-mobile-vertical: {
+    "pattern": "columns",
+    "gutterSize": 16,
+    "alignment": "stretch",
+    "count": 4,
+    "offset": 20
+  };
+  --font-title-hero: {
+    "fontSize": 72,
+    "textDecoration": "none",
+    "fontFamily": "Sora",
+    "fontWeight": 700,
+    "fontStyle": "normal",
+    "fontStretch": "normal",
+    "letterSpacing": -2.16,
+    "lineHeight": 86.4,
+    "paragraphIndent": 0,
+    "paragraphSpacing": 0,
+    "textCase": "none"
+  };
+  --font-title-page: {
+    "fontSize": 48,
+    "textDecoration": "none",
+    "fontFamily": "Sora",
+    "fontWeight": 700,
+    "fontStyle": "normal",
+    "fontStretch": "normal",
+    "letterSpacing": -0.96,
+    "lineHeight": 57.6,
+    "paragraphIndent": 0,
+    "paragraphSpacing": 0,
+    "textCase": "none"
+  };
+  --font-subtitle: {
+    "fontSize": 32,
+    "textDecoration": "none",
+    "fontFamily": "Sora",
+    "fontWeight": 400,
+    "fontStyle": "normal",
+    "fontStretch": "normal",
+    "letterSpacing": 0,
+    "lineHeight": 38.4,
+    "paragraphIndent": 0,
+    "paragraphSpacing": 0,
+    "textCase": "none"
+  };
+  --font-heading: {
+    "fontSize": 24,
+    "textDecoration": "none",
+    "fontFamily": "Sora",
+    "fontWeight": 600,
+    "fontStyle": "normal",
+    "fontStretch": "normal",
+    "letterSpacing": 0,
+    "lineHeight": 28.8,
+    "paragraphIndent": 0,
+    "paragraphSpacing": 0,
+    "textCase": "none"
+  };
+  --font-subheading: {
+    "fontSize": 20,
+    "textDecoration": "none",
+    "fontFamily": "Sora",
+    "fontWeight": 400,
+    "fontStyle": "normal",
+    "fontStretch": "normal",
+    "letterSpacing": 0,
+    "lineHeight": 24,
+    "paragraphIndent": 0,
+    "paragraphSpacing": 0,
+    "textCase": "none"
+  };
+  --font-body-base: {
+    "fontSize": 16,
+    "textDecoration": "none",
+    "fontFamily": "Sora",
+    "fontWeight": 400,
+    "fontStyle": "normal",
+    "fontStretch": "normal",
+    "letterSpacing": 0,
+    "lineHeight": 22.4,
+    "paragraphIndent": 0,
+    "paragraphSpacing": 0,
+    "textCase": "none"
+  };
+  --font-body-strong: {
+    "fontSize": 16,
+    "textDecoration": "none",
+    "fontFamily": "Sora",
+    "fontWeight": 600,
+    "fontStyle": "normal",
+    "fontStretch": "normal",
+    "letterSpacing": 0,
+    "lineHeight": 22.4,
+    "paragraphIndent": 0,
+    "paragraphSpacing": 0,
+    "textCase": "none"
+  };
+  --font-body-link: {
+    "fontSize": 16,
+    "textDecoration": "underline",
+    "fontFamily": "Sora",
+    "fontWeight": 400,
+    "fontStyle": "normal",
+    "fontStretch": "normal",
+    "letterSpacing": 0,
+    "lineHeight": 22.4,
+    "paragraphIndent": 0,
+    "paragraphSpacing": 0,
+    "textCase": "none"
+  };
+  --font-body-small: {
+    "fontSize": 14,
+    "textDecoration": "none",
+    "fontFamily": "Sora",
+    "fontWeight": 400,
+    "fontStyle": "normal",
+    "fontStretch": "normal",
+    "letterSpacing": 0,
+    "lineHeight": 19.6,
+    "paragraphIndent": 0,
+    "paragraphSpacing": 0,
+    "textCase": "none"
+  };
+  --font-body-small-strong: {
+    "fontSize": 14,
+    "textDecoration": "none",
+    "fontFamily": "Sora",
+    "fontWeight": 600,
+    "fontStyle": "normal",
+    "fontStretch": "normal",
+    "letterSpacing": 0,
+    "lineHeight": 19.6,
+    "paragraphIndent": 0,
+    "paragraphSpacing": 0,
+    "textCase": "none"
+  };
+  --font-single-line-body-base: {
+    "fontSize": 16,
+    "textDecoration": "none",
+    "fontFamily": "Sora",
+    "fontWeight": 400,
+    "fontStyle": "normal",
+    "fontStretch": "normal",
+    "letterSpacing": 0,
+    "lineHeight": 16,
+    "paragraphIndent": 0,
+    "paragraphSpacing": 0,
+    "textCase": "none"
+  };
+  --font-single-line-body-strong: {
+    "fontSize": 16,
+    "textDecoration": "none",
+    "fontFamily": "Sora",
+    "fontWeight": 600,
+    "fontStyle": "normal",
+    "fontStretch": "normal",
+    "letterSpacing": 0,
+    "lineHeight": 16,
+    "paragraphIndent": 0,
+    "paragraphSpacing": 0,
+    "textCase": "none"
+  };
+  --typography-title-hero-font-size: 72;
+  --typography-title-hero-text-decoration: none;
+  --typography-title-hero-font-family: Sora;
+  --typography-title-hero-font-weight: 700;
+  --typography-title-hero-font-style: normal;
+  --typography-title-hero-font-stretch: normal;
+  --typography-title-hero-letter-spacing: -2.16;
+  --typography-title-hero-line-height: 86.4;
+  --typography-title-hero-paragraph-indent: 0;
+  --typography-title-hero-paragraph-spacing: 0;
+  --typography-title-hero-text-case: none;
+  --typography-title-page-font-size: 48;
+  --typography-title-page-text-decoration: none;
+  --typography-title-page-font-family: Sora;
+  --typography-title-page-font-weight: 700;
+  --typography-title-page-font-style: normal;
+  --typography-title-page-font-stretch: normal;
+  --typography-title-page-letter-spacing: -0.96;
+  --typography-title-page-line-height: 57.6;
+  --typography-title-page-paragraph-indent: 0;
+  --typography-title-page-paragraph-spacing: 0;
+  --typography-title-page-text-case: none;
+  --typography-subtitle-font-size: 32;
+  --typography-subtitle-text-decoration: none;
+  --typography-subtitle-font-family: Sora;
+  --typography-subtitle-font-weight: 400;
+  --typography-subtitle-font-style: normal;
+  --typography-subtitle-font-stretch: normal;
+  --typography-subtitle-letter-spacing: 0;
+  --typography-subtitle-line-height: 38.4;
+  --typography-subtitle-paragraph-indent: 0;
+  --typography-subtitle-paragraph-spacing: 0;
+  --typography-subtitle-text-case: none;
+  --typography-heading-font-size: 24;
+  --typography-heading-text-decoration: none;
+  --typography-heading-font-family: Sora;
+  --typography-heading-font-weight: 600;
+  --typography-heading-font-style: normal;
+  --typography-heading-font-stretch: normal;
+  --typography-heading-letter-spacing: 0;
+  --typography-heading-line-height: 28.8;
+  --typography-heading-paragraph-indent: 0;
+  --typography-heading-paragraph-spacing: 0;
+  --typography-heading-text-case: none;
+  --typography-subheading-font-size: 20;
+  --typography-subheading-text-decoration: none;
+  --typography-subheading-font-family: Sora;
+  --typography-subheading-font-weight: 400;
+  --typography-subheading-font-style: normal;
+  --typography-subheading-font-stretch: normal;
+  --typography-subheading-letter-spacing: 0;
+  --typography-subheading-line-height: 24;
+  --typography-subheading-paragraph-indent: 0;
+  --typography-subheading-paragraph-spacing: 0;
+  --typography-subheading-text-case: none;
+  --typography-body-base-font-size: 16;
+  --typography-body-base-text-decoration: none;
+  --typography-body-base-font-family: Sora;
+  --typography-body-base-font-weight: 400;
+  --typography-body-base-font-style: normal;
+  --typography-body-base-font-stretch: normal;
+  --typography-body-base-letter-spacing: 0;
+  --typography-body-base-line-height: 22.4;
+  --typography-body-base-paragraph-indent: 0;
+  --typography-body-base-paragraph-spacing: 0;
+  --typography-body-base-text-case: none;
+  --typography-body-strong-font-size: 16;
+  --typography-body-strong-text-decoration: none;
+  --typography-body-strong-font-family: Sora;
+  --typography-body-strong-font-weight: 600;
+  --typography-body-strong-font-style: normal;
+  --typography-body-strong-font-stretch: normal;
+  --typography-body-strong-letter-spacing: 0;
+  --typography-body-strong-line-height: 22.4;
+  --typography-body-strong-paragraph-indent: 0;
+  --typography-body-strong-paragraph-spacing: 0;
+  --typography-body-strong-text-case: none;
+  --typography-body-link-font-size: 16;
+  --typography-body-link-text-decoration: underline;
+  --typography-body-link-font-family: Sora;
+  --typography-body-link-font-weight: 400;
+  --typography-body-link-font-style: normal;
+  --typography-body-link-font-stretch: normal;
+  --typography-body-link-letter-spacing: 0;
+  --typography-body-link-line-height: 22.4;
+  --typography-body-link-paragraph-indent: 0;
+  --typography-body-link-paragraph-spacing: 0;
+  --typography-body-link-text-case: none;
+  --typography-body-small-font-size: 14;
+  --typography-body-small-text-decoration: none;
+  --typography-body-small-font-family: Sora;
+  --typography-body-small-font-weight: 400;
+  --typography-body-small-font-style: normal;
+  --typography-body-small-font-stretch: normal;
+  --typography-body-small-letter-spacing: 0;
+  --typography-body-small-line-height: 19.6;
+  --typography-body-small-paragraph-indent: 0;
+  --typography-body-small-paragraph-spacing: 0;
+  --typography-body-small-text-case: none;
+  --typography-body-small-strong-font-size: 14;
+  --typography-body-small-strong-text-decoration: none;
+  --typography-body-small-strong-font-family: Sora;
+  --typography-body-small-strong-font-weight: 600;
+  --typography-body-small-strong-font-style: normal;
+  --typography-body-small-strong-font-stretch: normal;
+  --typography-body-small-strong-letter-spacing: 0;
+  --typography-body-small-strong-line-height: 19.6;
+  --typography-body-small-strong-paragraph-indent: 0;
+  --typography-body-small-strong-paragraph-spacing: 0;
+  --typography-body-small-strong-text-case: none;
+  --typography-single-line-body-base-font-size: 16;
+  --typography-single-line-body-base-text-decoration: none;
+  --typography-single-line-body-base-font-family: Sora;
+  --typography-single-line-body-base-font-weight: 400;
+  --typography-single-line-body-base-font-style: normal;
+  --typography-single-line-body-base-font-stretch: normal;
+  --typography-single-line-body-base-letter-spacing: 0;
+  --typography-single-line-body-base-line-height: 16;
+  --typography-single-line-body-base-paragraph-indent: 0;
+  --typography-single-line-body-base-paragraph-spacing: 0;
+  --typography-single-line-body-base-text-case: none;
+  --typography-single-line-body-strong-font-size: 16;
+  --typography-single-line-body-strong-text-decoration: none;
+  --typography-single-line-body-strong-font-family: Sora;
+  --typography-single-line-body-strong-font-weight: 600;
+  --typography-single-line-body-strong-font-style: normal;
+  --typography-single-line-body-strong-font-stretch: normal;
+  --typography-single-line-body-strong-letter-spacing: 0;
+  --typography-single-line-body-strong-line-height: 16;
+  --typography-single-line-body-strong-paragraph-indent: 0;
+  --typography-single-line-body-strong-paragraph-spacing: 0;
+  --typography-single-line-body-strong-text-case: none;
+}

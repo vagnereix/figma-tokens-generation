@@ -5,7 +5,7 @@
       "transformGroup": "css",
       "buildPath": "build/css/",
       "files": [{
-        "destination": "tokens-css.css",
+        "destination": "tokens-css-2.css",
         "format": "css/variables"
       }]
     },
