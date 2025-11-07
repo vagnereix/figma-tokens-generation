@@ -1,26 +1,12 @@
 name: Generate design tokens
 
 on:
-  workflow_dispatch:
-    inputs:
-      filename:
-        description: "Nome do arquivo de saída"
-        required: true
-        type: string
-      tokens:
-        description: "JSON dos tokens exportados do Figma"
-        required: true
-        type: string
-      commitMessage:
-        description: "Mensagem do commit"
-        required: false
-        type: string
-        default: "Update design tokens"
+  repository_dispatch:
+    types: [update-tokens]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
 
@@ -28,14 +14,14 @@ jobs:
         id: create-json
         uses: jsdaniell/create-json@1.1.2
         with:
-          name: ${{ github.event.inputs.filename }}
-          json: ${{ github.event.inputs.tokens }}
+          name: ${{ github.event.client_payload.filename }}
+          json: ${{ github.event.client_payload.tokens }}
           dir: 'input'
 
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 18
+          node-version: 16
 
       - name: Install dependencies
         run: npm ci
@@ -46,9 +32,9 @@ jobs:
       - name: Create PR
         uses: peter-evans/create-pull-request@v4
         with:
-          commit-message: ${{ github.event.inputs.commitMessage }}
-          title: ${{ github.event.inputs.commitMessage }}
+          commit-message: "style: Update design tokens"
+          title: ${{ github.event.client_payload.commitMessage || 'Update design tokens' }}
           body: "Design tokens have been updated via Figma and need to be reviewed."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH_NAME: "main"
+          BRANCH_NAME: 'main'
