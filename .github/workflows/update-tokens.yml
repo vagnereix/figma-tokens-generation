@@ -7,6 +7,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    # VITAL: Adicione as permissões de escrita para o GITHUB_TOKEN neste job
+    permissions: 
+      contents: write
+      pull-requests: write
     steps:
       - uses: actions/checkout@v3
 
@@ -37,5 +41,3 @@ jobs:
           body: "Design tokens have been updated via Figma and need to be reviewed."
           branch: "update-tokens-${{ github.run_id }}"
           base: "main"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
